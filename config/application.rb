@@ -23,7 +23,7 @@ module PeriodicTable
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
-
+    config.hosts << "3000-dcb49f9d-3b57-4928-af8d-8abde1aba8a4.ws-us03.gitpod.io"
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
