@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ldpalves/periodic_table)
+
 # Avaliação de Desenvolvedor - App Tabela Periódica
 
 Olá, logo começaremos os trabalhos! Mas primeiro um comentário importante. Você encontrará uma lista de tarefas logo abaixo. Não é necessário realizar todas, mas quanto mais avançar melhor para sua avaliação.
