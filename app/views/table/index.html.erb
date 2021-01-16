@@ -1,0 +1,68 @@
+
+<div class="container">  
+<div class = "table_grid">
+  <% (1..18).each do |i| %>
+    <div class = "column">
+      <% (1..10).each do |j| %>
+        <div class = "row">
+            <% element_name = @indexes[i-1][j-1].downcase%>
+            <% if  element_name== "0"%>
+          <div class = "element empty">
+         
+            <% else %>
+              <% case @elements[element_name]["category"]%>
+              <% when "alkali metal"%>
+              <div class = "element dark_yellow">
+                              
+              <% when "alkaline earth metal"%>
+              <div class = "element yellow">
+                            
+              <% when "transition metal"%>
+              <div class = "element salmon">
+                            
+              <% when "transition metal"%>
+              <div class = "element salmon">
+                            
+              <% when "post-transition metal"%>
+              <div class = "element light_blue">
+                            
+              <% when "metalloid"%>
+              <div class = "element water_green">
+                             
+              <% when "polyatomic nonmetal"%>
+              <div class = "element green">
+                             
+              <% when "diatomic nonmetal"%>
+              <div class = "element blue">
+                             
+              <% when "noble gas"%>
+              <div class = "element pink">
+                             
+              <% when "basic metal"%>
+              <div class = "element light_red">
+
+              <% when "actinide"%>
+              <div class = "element blue_green">
+
+              <% when "lanthanide"%>
+              <div class = "element orange">
+
+              <% else%>
+              <div class = "element grey" >  
+
+              <% end%>
+              <%# <%= @elements[element_name]["category"].inspect %>  
+              <%= @elements[element_name]["number"]  %>
+              <h2><%= @elements[element_name]["symbol"] %></h2>
+              <h5><%= element_name%></h5>
+              <h5><%= @elements[element_name]["atomic_mass"]  %></h5>
+
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>   
+  <% end %>
+</div>
+
+

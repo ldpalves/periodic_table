@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+ 
+ /* Variables */
+:root{
+    --one_eighth: 5.555vw
+}
+div{
+    background-color: whitesmoke;
+}
+body{
+    background-color: #e0e0e0;
+}
+.table_grid{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-flow: row wrap;
+    width: var(--one_eighth);
+}
+.row{
+    width: var(--one_eighth);
+
+}  
+.element{
+    width: var(--one_eighth)-1px;
+    height: 4rem;
+    border: 1px solid black;
+    margin: 1px;
+    z-index: 1;
+    font-size: smaller;
+    line-height: 0.99rem;
+    padding-right: 0.4rem;
+}
+.element p{
+    font-size: medium;
+    margin: 2px;
+}
+.element h2
+    margin: 0;
+    text-align: right;
+}
+.element h5{
+    margin: 0;
+    text-align: right;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.empty{
+    border: none;
+    z-index: 0;
+}
+
+.yellow{
+    background-color: yellow;
+}.salmon{
+    background-color: salmon;
+}.light_blue{
+    background-color: lightblue;
+}.water_green{
+    background-color: rgb(144, 238, 205);
+}.green{
+    background-color: rgb(40, 133, 40);
+}.blue{
+    background-color: rgb(73, 73, 255);
+}.pink{
+    background-color: rgb(255, 99, 242);
+}.light_red{
+    background-color: rgb(255, 84, 84);
+}.dark_yellow{
+    background-color: darkgoldenrod;
+}.grey{
+    background-color: grey;
+}
